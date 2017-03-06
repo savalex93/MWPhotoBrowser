@@ -27,7 +27,8 @@ Pod::Spec.new do |s|
     :git => 'https://github.com/mwaterfall/MWPhotoBrowser.git',
     :tag => '2.1.2'
   }
-  s.platform = :ios, '7.0'
+  s.ios.deployment_target = "7.0"
+  s.tvos.deployment_target = "9.0"
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
     'MWPhotoBrowser' => ['Pod/Assets/*.png']
